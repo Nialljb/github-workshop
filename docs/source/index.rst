@@ -78,11 +78,11 @@ Table of Contents
    :maxdepth: 2
    :caption: Group Challenge
 
-   challenge/overview
-   challenge/group1-smoothing
-   challenge/group2-skullstrip
-   challenge/group3-qa
-   challenge/group4-visualisation
+   anat-challenge/overview
+   anat-challenge/group1-skullstrip
+   anat-challenge/group2-biascorrection
+   anat-challenge/group3-segmentation
+   anat-challenge/group4-visualization
 
 .. toctree::
    :maxdepth: 2
