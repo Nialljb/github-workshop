@@ -77,7 +77,7 @@ The complete pipeline includes:
 
 ## Documentation
 
-Full documentation available at: [\[Read the Docs link\]](https://nialljb.github.io/github-workshop/challenge/overview.html)
+Full documentation available at: [\[Read the Docs link\]](https://nialljb.github.io/github-workshop/index.html)
 
 Or build locally:
 ```bash
