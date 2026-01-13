@@ -77,7 +77,7 @@ class StructuralPipeline:
             print("Manual download option:")
             print("Run: python scripts/download_workshop_data.py")
             raise
-        return img
+        
 
     # GROUP 1: IMPLEMENT SKULL STRIPPING METHOD HERE
 
