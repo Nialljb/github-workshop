@@ -32,14 +32,14 @@ Step 1: Fork the Repository
 ----------------------------
 
 .. note::
-   Instructor provides: ``https://github.com/INSTRUCTOR_NAME/neuroimaging-workshop``
+   ``https://github.com/Nialljb/github-workshop.git``
 
 1. Navigate to the repository on GitHub
 2. Click the **Fork** button (top right corner)
 3. Select your account as the destination
 4. Wait for fork to complete (usually 5-10 seconds)
 
-You now have: ``https://github.com/YOUR_USERNAME/neuroimaging-workshop``
+You now have: ``https://github.com/YOUR_USERNAME/github-workshop``
 
 Step 2: Clone to HPC Workspace
 -------------------------------
