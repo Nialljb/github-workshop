@@ -24,3 +24,11 @@ __pycache__/
 .DS_Store
 Thumbs.db
 
+# Data files (neuroimaging)
+*.nii
+*.nii.gz
+*.dcm
+*.BRIK
+*.HEAD
+
+outputs/
