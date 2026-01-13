@@ -1,6 +1,6 @@
 Group 2: Bias Field Correction
-
 =============================
+
 .. note::
    **Branch Name:** ``feature/group-2-biascorrection``
    
@@ -32,12 +32,12 @@ MRI signal intensity. It's caused by:
 Requirements Checklist
 ----------------------
 
-.. checkbox:: Add method ``bias_field_correction(self, img)`` to ``StructuralPipeline`` class
-.. checkbox:: Implement N4 bias field correction algorithm
-.. checkbox:: Save corrected image to ``outputs/sub-{idx}_corrected.nii.gz``
-.. checkbox:: Save estimated bias field to ``outputs/sub-{idx}_bias_field.nii.gz``
-.. checkbox:: Print before/after intensity statistics
-.. checkbox:: Add comprehensive docstring
+- ☐ Add method ``bias_field_correction(self, img)`` to ``StructuralPipeline`` class
+- ☐ Implement N4 bias field correction algorithm
+- ☐ Save corrected image to ``outputs/sub-{idx}_corrected.nii.gz``
+- ☐ Save estimated bias field to ``outputs/sub-{idx}_bias_field.nii.gz``
+- ☐ Print before/after intensity statistics
+- ☐ Add comprehensive docstring
 
 Code Template
 -------------

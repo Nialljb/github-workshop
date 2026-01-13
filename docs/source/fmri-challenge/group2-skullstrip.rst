@@ -22,12 +22,12 @@ and reducing computational load.
 Requirements Checklist
 ----------------------
 
-.. checkbox:: Add method ``skull_strip(self, img)`` to ``PreprocessingPipeline`` class
-.. checkbox:: Use ``nilearn.masking.compute_epi_mask()`` to create brain mask
-.. checkbox:: Apply mask to remove non-brain voxels
-.. checkbox:: Save mask to ``outputs/sub-{subject_id}_mask.nii.gz``
-.. checkbox:: Print mask coverage statistics (% voxels retained)
-.. checkbox:: Add comprehensive docstring
+- ☐ Add method ``skull_strip(self, img)`` to ``PreprocessingPipeline`` class
+- ☐ Use ``nilearn.masking.compute_epi_mask()`` to create brain mask
+- ☐ Apply mask to remove non-brain voxels
+- ☐ Save mask to ``outputs/sub-{subject_id}_mask.nii.gz``
+- ☐ Print mask coverage statistics (% voxels retained)
+- ☐ Add comprehensive docstring
 
 Code Template
 -------------

@@ -20,11 +20,11 @@ might miss. A good diagnostic figure helps you:
 Requirements Checklist
 ----------------------
 
-.. checkbox:: Add method ``create_visualization(self, img, subject_id)`` to ``PreprocessingPipeline`` class
-.. checkbox:: Generate multi-panel figure with Mean EPI, Temporal Std Dev, Carpet Plot, Global Signal
-.. checkbox:: Save figure to ``outputs/sub-{subject_id}_diagnostic.png``
-.. checkbox:: Use matplotlib for plotting
-.. checkbox:: Add comprehensive docstring
+- ☐ Add method ``create_visualization(self, img, subject_id)`` to ``PreprocessingPipeline`` class
+- ☐ Generate multi-panel figure with Mean EPI, Temporal Std Dev, Carpet Plot, Global Signal
+- ☐ Save figure to ``outputs/sub-{subject_id}_diagnostic.png``
+- ☐ Use matplotlib for plotting
+- ☐ Add comprehensive docstring
 
 Code Template
 -------------

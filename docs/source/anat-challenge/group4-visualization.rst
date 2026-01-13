@@ -27,13 +27,13 @@ diagnostic figure helps you:
 Requirements Checklist
 ----------------------
 
-.. checkbox:: Add method ``create_visualization(self, img, segmentation, subject_idx)``
-.. checkbox:: Generate multi-panel figure showing all processing stages
-.. checkbox:: Include: original, brain-extracted, bias-corrected, segmentation overlay
-.. checkbox:: Add tissue volume summary text
-.. checkbox:: Save figure to ``outputs/sub-{idx}_diagnostic.png``
-.. checkbox:: Use matplotlib and nilearn plotting
-.. checkbox:: Add comprehensive docstring
+- ☐ Add method ``create_visualization(self, img, segmentation, subject_idx)``
+- ☐ Generate multi-panel figure showing all processing stages
+- ☐ Include: original, brain-extracted, bias-corrected, segmentation overlay
+- ☐ Add tissue volume summary text
+- ☐ Save figure to ``outputs/sub-{idx}_diagnostic.png``
+- ☐ Use matplotlib and nilearn plotting
+- ☐ Add comprehensive docstring
 
 Code Template
 -------------

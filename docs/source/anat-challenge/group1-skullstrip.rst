@@ -21,13 +21,13 @@ It isolates brain tissue from non-brain structures (skull, scalp, eyes, neck).
 Requirements Checklist
 ----------------------
 
-.. checkbox:: Add method ``skull_strip(self, img)`` to ``StructuralPipeline`` class
-.. checkbox:: Use ``nilearn.masking.compute_brain_mask()`` to create brain mask
-.. checkbox:: Apply mask to extract brain-only image
-.. checkbox:: Save mask to ``outputs/sub-{idx}_brain_mask.nii.gz``
-.. checkbox:: Save brain to ``outputs/sub-{idx}_brain.nii.gz``
-.. checkbox:: Print mask statistics (% voxels retained)
-.. checkbox:: Add comprehensive docstring
+- ☐ Add method ``skull_strip(self, img)`` to ``StructuralPipeline`` class
+- ☐ Use ``nilearn.masking.compute_brain_mask()`` to create brain mask
+- ☐ Apply mask to extract brain-only image
+- ☐ Save mask to ``outputs/sub-{idx}_brain_mask.nii.gz``
+- ☐ Save brain to ``outputs/sub-{idx}_brain.nii.gz``
+- ☐ Print mask statistics (% voxels retained)
+- ☐ Add comprehensive docstring
 
 Code Template
 -------------

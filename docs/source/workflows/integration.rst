@@ -12,12 +12,12 @@ Merge Completion Checklist
 
 Before final integration, verify:
 
-.. checkbox:: Group 2 (Skull Stripping) PR merged
-.. checkbox:: Group 1 (Smoothing) PR merged
-.. checkbox:: Group 3 (QA) PR merged
-.. checkbox:: Group 4 (Visualization) PR merged
-.. checkbox:: All merge conflicts resolved
-.. checkbox:: No failing tests
+- ☐ Group 2 (Skull Stripping) PR merged
+- ☐ Group 1 (Smoothing) PR merged
+- ☐ Group 3 (QA) PR merged
+- ☐ Group 4 (Visualization) PR merged
+- ☐ All merge conflicts resolved
+- ☐ No failing tests
 
 Updating Your Local Repository
 -------------------------------
@@ -628,14 +628,14 @@ After completing the workshop:
 Workshop Completion Checklist
 ------------------------------
 
-.. checkbox:: All group PRs successfully merged
-.. checkbox:: Complete pipeline runs without errors
-.. checkbox:: All outputs generated correctly
-.. checkbox:: QA metrics within expected ranges
-.. checkbox:: Visualizations look correct
-.. checkbox:: Tested on multiple subjects
-.. checkbox:: Code committed to repository
-.. checkbox:: Understanding of Git workflows achieved
+- ☐ All group PRs successfully merged
+- ☐ Complete pipeline runs without errors
+- ☐ All outputs generated correctly
+- ☐ QA metrics within expected ranges
+- ☐ Visualizations look correct
+- ☐ Tested on multiple subjects
+- ☐ Code committed to repository
+- ☐ Understanding of Git workflows achieved
 
 Congratulations!
 ----------------

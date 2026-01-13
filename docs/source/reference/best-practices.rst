@@ -122,13 +122,13 @@ Pull Request Guidelines
 
 **Before Submitting PR:**
 
-.. checkbox:: Code works and is tested
-.. checkbox:: All tests pass
-.. checkbox:: Code follows style guide
-.. checkbox:: Docstrings are complete
-.. checkbox:: No debug print statements
-.. checkbox:: No commented-out code
-.. checkbox:: Branch is up-to-date with main
+- ☐ Code works and is tested
+- ☐ All tests pass
+- ☐ Code follows style guide
+- ☐ Docstrings are complete
+- ☐ No debug print statements
+- ☐ No commented-out code
+- ☐ Branch is up-to-date with main
 
 Code Review Guidelines
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -151,12 +151,12 @@ Code Review Guidelines
 
 **Review Checklist:**
 
-.. checkbox:: Code is clear and readable
-.. checkbox:: Functions have docstrings
-.. checkbox:: No hardcoded paths
-.. checkbox:: Error handling present
-.. checkbox:: Tests cover main functionality
-.. checkbox:: No obvious bugs
+- ☐ Code is clear and readable
+- ☐ Functions have docstrings
+- ☐ No hardcoded paths
+- ☐ Error handling present
+- ☐ Tests cover main functionality
+- ☐ No obvious bugs
 
 Coding Best Practices
 ---------------------
@@ -642,17 +642,17 @@ Checklist for Production Code
 
 Before deploying code for real research:
 
-.. checkbox:: All functions have docstrings
-.. checkbox:: Unit tests cover >80% of code
-.. checkbox:: Code follows style guide (flake8 passes)
-.. checkbox:: No hardcoded paths
-.. checkbox:: Comprehensive error handling
-.. checkbox:: Logging implemented for debugging
-.. checkbox:: Resource usage tested on HPC
-.. checkbox:: Documentation is complete
-.. checkbox:: Peer review completed
-.. checkbox:: Preprocessing parameters documented
-.. checkbox:: Version control for reproducibility
+- ☐ All functions have docstrings
+- ☐ Unit tests cover >80% of code
+- ☐ Code follows style guide (flake8 passes)
+- ☐ No hardcoded paths
+- ☐ Comprehensive error handling
+- ☐ Logging implemented for debugging
+- ☐ Resource usage tested on HPC
+- ☐ Documentation is complete
+- ☐ Peer review completed
+- ☐ Preprocessing parameters documented
+- ☐ Version control for reproducibility
 
 Resources
 ---------

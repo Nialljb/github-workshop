@@ -33,13 +33,13 @@ Uses intensity differences between tissues in T1-weighted images:
 Requirements Checklist
 ----------------------
 
-.. checkbox:: Add method ``tissue_segmentation(self, img)`` to ``StructuralPipeline`` class
-.. checkbox:: Implement 3-class segmentation (GM, WM, CSF)
-.. checkbox:: Use FSL FAST algorithm (via nilearn interface)
-.. checkbox:: Save tissue probability maps to ``outputs/``
-.. checkbox:: Calculate and report tissue volumes
-.. checkbox:: Return segmentation result as dictionary
-.. checkbox:: Add comprehensive docstring
+- ☐ Add method ``tissue_segmentation(self, img)`` to ``StructuralPipeline`` class
+- ☐ Implement 3-class segmentation (GM, WM, CSF)
+- ☐ Use FSL FAST algorithm (via nilearn interface)
+- ☐ Save tissue probability maps to ``outputs/``
+- ☐ Calculate and report tissue volumes
+- ☐ Return segmentation result as dictionary
+- ☐ Add comprehensive docstring
 
 Code Template
 -------------

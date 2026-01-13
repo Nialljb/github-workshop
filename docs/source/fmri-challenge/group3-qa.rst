@@ -22,12 +22,12 @@ signal dropout before they contaminate your results.
 Requirements Checklist
 ----------------------
 
-.. checkbox:: Add method ``quality_assurance(self, img)`` to ``PreprocessingPipeline`` class
-.. checkbox:: Calculate temporal SNR (tSNR): mean signal / temporal standard deviation
-.. checkbox:: Detect motion outliers using volume-to-volume intensity changes
-.. checkbox:: Save QA report to ``outputs/sub-{subject_id}_qa_report.txt``
-.. checkbox:: Return dictionary with metrics
-.. checkbox:: Add comprehensive docstring
+- ☐ Add method ``quality_assurance(self, img)`` to ``PreprocessingPipeline`` class
+- ☐ Calculate temporal SNR (tSNR): mean signal / temporal standard deviation
+- ☐ Detect motion outliers using volume-to-volume intensity changes
+- ☐ Save QA report to ``outputs/sub-{subject_id}_qa_report.txt``
+- ☐ Return dictionary with metrics
+- ☐ Add comprehensive docstring
 
 Code Template
 -------------

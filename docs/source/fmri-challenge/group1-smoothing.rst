@@ -23,12 +23,12 @@ in fMRI analysis.
 Requirements Checklist
 ----------------------
 
-.. checkbox:: Add method ``smooth_image(self, img, fwhm=6.0)`` to ``PreprocessingPipeline`` class
-.. checkbox:: Use ``nilearn.image.smooth_img()`` function
-.. checkbox:: FWHM parameter should be configurable (default: 6mm)
-.. checkbox:: Save smoothed image to ``outputs/sub-{subject_id}_smoothed.nii.gz``
-.. checkbox:: Print smoothing parameters to console
-.. checkbox:: Add comprehensive docstring with parameters and return value
+- ☐ Add method ``smooth_image(self, img, fwhm=6.0)`` to ``PreprocessingPipeline`` class
+- ☐ Use ``nilearn.image.smooth_img()`` function
+- ☐ FWHM parameter should be configurable (default: 6mm)
+- ☐ Save smoothed image to ``outputs/sub-{subject_id}_smoothed.nii.gz``
+- ☐ Print smoothing parameters to console
+- ☐ Add comprehensive docstring with parameters and return value
 
 Code Template
 -------------
