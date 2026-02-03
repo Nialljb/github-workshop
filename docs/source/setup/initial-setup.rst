@@ -61,7 +61,87 @@ Open VS Code integrated terminal:
    Clone **YOUR fork**, not the instructor's repository. You don't have write 
    access to the instructor's repository.
 
-Step 3: Add Upstream Remote
+Step 3: SSH Keys for Mac Users
+-------------------------------
+
+For secure authentication with GitHub, you'll need SSH keys. This is especially 
+important for pushing changes to your repository.
+
+Check for Existing Keys
+~~~~~~~~~~~~~~~~~~~~~~~
+
+First, check if you already have SSH keys:
+
+.. code-block:: bash
+
+   ls ~/.ssh
+
+If you see files like ``id_rsa`` and ``id_rsa.pub``, you already have a key pair.
+You can skip to adding the public key to GitHub below.
+
+Expected output with existing keys:
+
+.. code-block:: text
+
+   authorized_keys  id_rsa      id_rsa.pub   config   known_hosts
+
+Generate New RSA Key
+~~~~~~~~~~~~~~~~~~~~
+
+If you don't have keys, create a new RSA key pair:
+
+.. code-block:: bash
+
+   ssh-keygen -t rsa
+
+.. warning::
+   If you have an existing ``id_rsa`` file, this command will overwrite it! 
+   Press Ctrl+C to cancel if you want to keep your existing key.
+
+When prompted:
+
+1. **File location**: Press Enter to use the default location (``~/.ssh/id_rsa``)
+2. **Passphrase**: Enter a strong passphrase for security (recommended)
+
+Add Public Key to GitHub
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Copy your public key to the clipboard:
+
+.. code-block:: bash
+
+   cat ~/.ssh/id_rsa.pub
+
+This will display your public key. Copy the entire output.
+
+Then:
+
+1. Go to GitHub → Settings → SSH and GPG keys
+2. Click **New SSH key**
+3. Give it a descriptive title (e.g., "HPC Workstation")
+4. Paste your public key in the "Key" field
+5. Click **Add SSH key**
+
+Test SSH Connection
+~~~~~~~~~~~~~~~~~~~
+
+Verify your SSH key works with GitHub:
+
+.. code-block:: bash
+
+   ssh -T git@github.com
+
+You should see a message like:
+
+.. code-block:: text
+
+   Hi YOUR_USERNAME! You've successfully authenticated, but GitHub does not provide shell access.
+
+.. note::
+   Now you can use SSH URLs (``git@github.com:username/repo.git``) instead of 
+   HTTPS URLs when cloning repositories for better security and convenience.
+
+Step 4: Add Upstream Remote
 ----------------------------
 
 What is a remote?
@@ -96,7 +176,7 @@ Remember:
 - **origin** = your fork (you push here)
 - **upstream** = instructor's repo (you pull from here)
 
-Step 4: Create Python Environment
+Step 5: Create Python Environment
 ----------------------------------
 
 .. code-block:: bash
@@ -120,7 +200,7 @@ Virtual environments isolate your project's Python packages:
 - Easy to recreate environment on another machine
 - Clean pip install list specific to this project
 
-Step 5: Install Dependencies
+Step 6: Install Dependencies
 -----------------------------
 
 .. code-block:: bash
@@ -145,7 +225,7 @@ Understanding requirements.txt:
 - Ensures everyone has compatible versions
 - Pin exact versions for reproducibility: ``nibabel==5.0.1``
 
-Step 6: Verify Data Access
+Step 7: Verify Data Access
 ---------------------------
 
 .. code-block:: bash
