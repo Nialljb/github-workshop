@@ -92,7 +92,87 @@ Understanding SSH Configuration Options
 - **ServerAliveInterval**: Sends keep-alive packet every 60 seconds to prevent disconnection
 - **ServerAliveCountMax**: Drops connection after 3 missed keep-alive responses
 
-Step 3: Connect to HPC Cluster
+Step 3: SSH Keys for Mac Users
+-------------------------------
+
+For secure authentication with GitHub and HPC access, you'll need SSH keys. This is 
+especially important for passwordless authentication and Git operations.
+
+Check for Existing Keys
+~~~~~~~~~~~~~~~~~~~~~~~
+
+First, check if you already have SSH keys:
+
+.. code-block:: bash
+
+   ls ~/.ssh
+
+If you see files like ``id_rsa`` and ``id_rsa.pub``, you already have a key pair.
+You can skip to adding the public key to GitHub below.
+
+Expected output with existing keys:
+
+.. code-block:: text
+
+   authorized_keys  id_rsa      id_rsa.pub   config   known_hosts
+
+Generate New RSA Key
+~~~~~~~~~~~~~~~~~~~~
+
+If you don't have keys, create a new RSA key pair:
+
+.. code-block:: bash
+
+   ssh-keygen -t rsa
+
+.. warning::
+   If you have an existing ``id_rsa`` file, this command will overwrite it! 
+   Press Ctrl+C to cancel if you want to keep your existing key.
+
+When prompted:
+
+1. **File location**: Press Enter to use the default location (``~/.ssh/id_rsa``)
+2. **Passphrase**: Enter a strong passphrase for security (recommended)
+
+Add Public Key to GitHub
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Copy your public key to the clipboard:
+
+.. code-block:: bash
+
+   cat ~/.ssh/id_rsa.pub
+
+This will display your public key. Copy the entire output.
+
+Then:
+
+1. Go to GitHub → Settings → SSH and GPG keys
+2. Click **New SSH key**
+3. Give it a descriptive title (e.g., "HPC Workstation")
+4. Paste your public key in the "Key" field
+5. Click **Add SSH key**
+
+Test SSH Connection
+~~~~~~~~~~~~~~~~~~~
+
+Verify your SSH key works with GitHub:
+
+.. code-block:: bash
+
+   ssh -T git@github.com
+
+You should see a message like:
+
+.. code-block:: text
+
+   Hi YOUR_USERNAME! You've successfully authenticated, but GitHub does not provide shell access.
+
+.. note::
+   Now you can use SSH URLs (``git@github.com:username/repo.git``) instead of 
+   HTTPS URLs when cloning repositories for better security and convenience.
+
+Step 4: Connect to HPC Cluster
 -------------------------------
 
 1. Press ``F1`` → Type ``Remote-SSH: Connect to Host``
@@ -107,7 +187,7 @@ Step 3: Connect to HPC Cluster
    VS Code automatically downloads and installs a server component (~60MB) on the 
    HPC cluster during your first connection. Subsequent connections will be much faster.
 
-Step 4: Open Your Workspace
+Step 5: Open Your Workspace
 ----------------------------
 
 1. Click **File → Open Folder** (or press ``Ctrl+K Ctrl+O``)
@@ -121,7 +201,7 @@ Step 4: Open Your Workspace
    
       mkdir -p ~/workshop
 
-Step 5: Configure Python Environment
+Step 6: Configure Python Environment
 -------------------------------------
 
 Why configure the Python interpreter?
@@ -156,7 +236,7 @@ Create ``.vscode/settings.json`` in your workspace:
        "python.formatting.provider": "black"
    }
 
-Step 6: Setup Integrated Terminal
+Step 7: Setup Integrated Terminal
 ----------------------------------
 
 1. Open terminal: **Terminal → New Terminal** (``Ctrl+Shift+```)
@@ -171,7 +251,7 @@ Step 6: Setup Integrated Terminal
       module load python/3.9
       module load git
 
-Step 7: Configure Git Identity
+Step 8: Configure Git Identity
 -------------------------------
 
 Why configure Git identity?
@@ -246,12 +326,12 @@ Add to SSH config:
        ServerAliveCountMax 5
        TCPKeepAlive yes
 
-Use tmux for persistent sessions:
+.. Use tmux for persistent sessions:
 
-.. code-block:: bash
+.. .. code-block:: bash
 
-   module load tmux
-   tmux new -s workshop
-   # Work happens here
-   # Detach: Ctrl+B then D
-   # Reattach: tmux attach -t workshop
+..    module load tmux
+..    tmux new -s workshop
+..    # Work happens here
+..    # Detach: Ctrl+B then D
+..    # Reattach: tmux attach -t workshop
