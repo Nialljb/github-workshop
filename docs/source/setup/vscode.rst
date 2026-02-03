@@ -326,12 +326,3 @@ Add to SSH config:
        ServerAliveCountMax 5
        TCPKeepAlive yes
 
-.. Use tmux for persistent sessions:
-
-.. .. code-block:: bash
-
-..    module load tmux
-..    tmux new -s workshop
-..    # Work happens here
-..    # Detach: Ctrl+B then D
-..    # Reattach: tmux attach -t workshop
