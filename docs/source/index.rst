@@ -98,6 +98,7 @@ Table of Contents
    :caption: Reference
 
    reference/best-practices
+   reference/git_common_scenarios
    reference/troubleshooting
    reference/resources
 
