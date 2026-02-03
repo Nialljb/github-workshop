@@ -76,6 +76,15 @@ Table of Contents
 
 .. toctree::
    :maxdepth: 2
+   :caption: Git Workflows
+
+   workflows/branching
+   workflows/pull-requests
+   workflows/merge-conflicts
+   workflows/integration
+
+.. toctree::
+   :maxdepth: 2
    :caption: Group Challenge
 
    anat-challenge/overview
@@ -83,15 +92,6 @@ Table of Contents
    anat-challenge/group2-biascorrection
    anat-challenge/group3-segmentation
    anat-challenge/group4-visualization
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Git Workflows
-
-   workflows/branching
-   workflows/pull-requests
-   workflows/merge-conflicts
-   workflows/integration
 
 .. toctree::
    :maxdepth: 2
